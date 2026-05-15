@@ -93,6 +93,7 @@
                     <span>{{ &createDate10 }}</span>
                     <div class="flex-fill"></div>
                     {{ #category }}
+					  <div class="text-xs text-muted">{{ &articleSingle.createDate10 }} · <i class="iconfont icon-eye"></i>{{ &articleSingle.views }}次阅读 · <i class="iconfont icon-wodepinglun"></i><span class="comments-count">0</span>条评论</div>
                     <span class="d-md-flex align-items-center ms-3 ms-md-5 text-muted">{{&.}}</span>
                     {{ /category }}
                   </div>
@@ -103,7 +104,7 @@
             </div>
             <div class="row mt-3">
               <div class="col-6 text-start">
-                <x class="btn btn-sm btn-light">{{ #currentPage }}第啊 {{ currentPage }} 页啊 / 共 {{ totalPages }} 啊页{{ /currentPage }}</x>
+                <x class="btn btn-sm btn-light">{{ #currentPage }}第 {{ currentPage }} 页 / 共 {{ totalPages }} 页{{ /currentPage }}</x>
               </div>
               <div class="col-6 text-end">
                 {{ #pageNewer }}
